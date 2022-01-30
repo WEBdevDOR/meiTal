@@ -1,0 +1,29 @@
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+    .nav-item {}
+    
+    header {
+      background: linear-gradient(#fff, #aa7eaa);
+      /* height: 80vh; */
+      color: #36147a;
+    }
+    
+    #quoteMain {
+      line-height: 1;
+      padding-right: 30px;
+    }
+    
+    #quoteMain .row .row .firstCube {
+      font-size: 1.5rem;
+      margin-right: 80px;
+    }
+    
+    #quoteMain .row .row .secondCube {
+      font-family: 'Amatic SC', cursive;
+      font-size: 2.5rem;
+    }
+    
+    #quoteMain .row .row .thirdCube {}
+    
+    .navbar-brand {
+      margin-right: 80px;
+    }
