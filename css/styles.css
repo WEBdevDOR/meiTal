@@ -1,34 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
-header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#aa7eaa));
-  background: linear-gradient(#fff, #aa7eaa);
-  /* height: 80vh; */
-  color: #36147a;
+* {
+  color: #5d39a5;
 }
 
-#quoteMain {
+.firstPage {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#656ab698));
+  background: linear-gradient(#fff, #656ab698);
+}
+
+.firstPage header {
+  color: #5d39a5;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.firstPage header #quoteMain {
   line-height: 0.7;
   padding-right: 30px;
 }
 
-#quoteMain .row .row {
-  padding-bottom: 40px;
-}
-
-#quoteMain .row .row .firstCube {
+.firstPage header #quoteMain .row .row .firstCube {
   margin-right: 80px;
 }
 
-#quoteMain .row .row .secondCube {
+.firstPage header #quoteMain .row .row .secondCube {
   font-family: 'Amatic SC', cursive;
 }
 
-#quoteMain .row .row .thirdCube {
+.firstPage header #quoteMain .row .row .thirdCube {
   margin-left: 30px;
   font-style: italic;
 }
 
-.navbar-brand {
+.firstPage header .navbar-brand {
   margin-right: 80px;
+}
+
+.firstPage header .navbar-light .navbar-nav .nav-link {
+  color: #5d39a5;
+}
+
+.firstPage header .navbar-light .navbar-nav .nav-link:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.firstPage #signup {
+  padding-top: 30px;
+}
+
+.firstPage #signup form {
+  color: #5d39a5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.firstPage #signup form #checkbox {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.firstPage #signup form button {
+  background-color: #656ab698;
+  font-weight: 700;
+  color: #5d39a5;
+}
+
+.firstPage #signup .form-text {
+  color: #5d39a5;
+}
+
+#secondPage {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#656ab698), to(#fff));
+  background: linear-gradient(#656ab698, #fff);
+}
+
+#secondPage #poem {
+  line-height: 1;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,35 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-$mainTextColor: #36147a;
-header {
-  background: linear-gradient(#fff, #aa7eaa);
-  /* height: 80vh; */
+// Variables
+$mainTextColor: #5d39a5;
+$mainHeaderColor: #656ab698;
+$downWhiteGradiant: linear-gradient($mainHeaderColor,
+#fff);
+$upWhiteGradiant: linear-gradient(#fff,
+$mainHeaderColor);
+//SCSS
+* {
   color: $mainTextColor;
 }
 
-#quoteMain {
-  line-height: 0.7;
-  padding-right: 30px;
+.firstPage {
+  height: 100vh;
+  background: $upWhiteGradiant;
+  header {
+    color: $mainTextColor;
+    height: fit-content;
+    #quoteMain {
+      line-height: 0.7;
+      padding-right: 30px;
+    }
+    #quoteMain .row .row .firstCube {
+      margin-right: 80px;
+    }
+    #quoteMain .row .row .secondCube {
+      font-family: 'Amatic SC', cursive;
+    }
+    #quoteMain .row .row .thirdCube {
+      margin-left: 30px;
+      font-style: italic;
+    }
+    .navbar-brand {
+      margin-right: 80px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+      color: $mainTextColor;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+      transform: scale(0.95);
+      // color: #fff;
+    }
+  }
+  #signup {
+    padding-top: 30px;
+    form {
+      color: $mainTextColor;
+      #checkbox {
+        width: fit-content;
+      }
+      width: fit-content;
+      button {
+        background-color: $mainHeaderColor;
+        font-weight: 700;
+        color: $mainTextColor;
+      }
+    }
+    .form-text {
+      color: $mainTextColor;
+    }
+  }
 }
 
-#quoteMain .row .row {
-  padding-bottom: 40px;
+#secondPage {
+  height: 100vh;
+  background: $downWhiteGradiant;
+  #poem {
+    line-height: 1;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 1.3rem;
+  }
 }
-
-#quoteMain .row .row .firstCube {
-  margin-right: 80px;
-}
-
-#quoteMain .row .row .secondCube {
-  font-family: 'Amatic SC', cursive;
-}
-
-#quoteMain .row .row .thirdCube {
-  margin-left: 30px;
-  font-style: italic;
-}
-
-.navbar-brand {
-  margin-right: 80px;
-}
-
-#signup {}
