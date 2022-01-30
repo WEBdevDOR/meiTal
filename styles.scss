@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+$mainTextColor: #36147a;
+header {
+  background: linear-gradient(#fff, #aa7eaa);
+  /* height: 80vh; */
+  color: $mainTextColor;
+}
+
+#quoteMain {
+  line-height: 0.7;
+  padding-right: 30px;
+}
+
+#quoteMain .row .row {
+  padding-bottom: 40px;
+}
+
+#quoteMain .row .row .firstCube {
+  margin-right: 80px;
+}
+
+#quoteMain .row .row .secondCube {
+  font-family: 'Amatic SC', cursive;
+}
+
+#quoteMain .row .row .thirdCube {
+  margin-left: 30px;
+  font-style: italic;
+}
+
+.navbar-brand {
+  margin-right: 80px;
+}
+
+#signup {}
